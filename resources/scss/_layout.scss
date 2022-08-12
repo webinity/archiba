@@ -4,6 +4,10 @@ body {
 	padding: 0;
 	height: 100%;
 	width: 100%;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1rem;
+	line-height: 1.4;
+	overflow: hidden;
 }
 
 h1,
@@ -14,4 +18,120 @@ h5,
 p {
 	margin: 0;
 	padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	font-family: 'Bahnschrift', sans-serif;
+}
+
+h1 {
+	font-size: 3rem;
+	line-height: 1;
+	text-align: center;
+	letter-spacing: 1px;
+	position: absolute;
+	top: 50%;
+	transform: translateY(calc(-50% - 100px));
+
+	@media screen and (min-width: $tablet) {
+		transform: translateY(calc(-50% - 120px));
+	}
+
+	@media screen and (min-width: $pc) {
+		font-size: 4rem;
+	}
+}
+
+nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	height: 70px;
+	padding: 0 30px;
+	padding-top: 30px;
+
+	.logo {
+		height: 100%;
+
+		img {
+			height: 100%;
+			width: auto;
+		}
+	}
+
+	.insta {
+		display: flex;
+		height: 100%;
+
+		&:visited {
+			color: initial;
+		}
+
+		svg {
+			height: 30px;
+			width: auto;
+		}
+	}
+
+	@media screen and (min-width: $tablet) {
+		padding: 0 50px;
+		padding-top: 50px;
+	}
+
+	@media screen and (min-width: $pc) {
+		height: 100px;
+
+		.insta {
+			svg {
+				height: 40px;
+			}
+		}
+	}
+}
+
+main {
+	height: calc(100vh - 100px);
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+
+	address {
+		position: absolute;
+		bottom: 30px;
+		font-style: normal;
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		font-weight: 300;
+		letter-spacing: 2px;
+
+		a {
+			text-decoration: none;
+			color: #000;
+		}
+
+		div {
+			margin-top: 20px;
+		}
+
+	}
+
+	@media screen and (min-width: $tablet) {
+		height: calc(100vh - 120px);
+
+		address {
+			bottom: 50px;
+		}
+	}
+
+	@media screen and (min-width: $pc) {
+		height: calc(100vh - 150px);
+	}
 }

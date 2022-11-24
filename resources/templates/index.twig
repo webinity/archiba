@@ -13,6 +13,7 @@
         rel="stylesheet">
     <link href="http://fonts.cdnfonts.com/css/bahnschrift" rel="stylesheet">
     <link rel="stylesheet" href="{{asset('css/styles.css')}}">
+
     <title>
         Barbora Kabeláčová | architektura a interiéry
     </title>
@@ -24,32 +25,57 @@
             <a class="logo" href="/">
                 <img src="{{asset('imgs/logo.png')}}" alt="Logo Archiba">
             </a>
-            <a class="insta" href="https://www.instagram.com/_archiba/">
-                {% include "svg/instagram.twig" %}
-            </a>
+            <div class="hamburger">
+                {% include "svg/hamburger.twig" %}
+            </div>
+            <div class="nav-list" id="nav-open">
+                <div class="close">
+                    {% include "svg/close.twig" %}
+                </div>
+                <ul>
+                    <li><a href="/projekty">projekty</a></li>
+                    <li><a href="/sluzby">služby</a></li>
+                    <li><a href="#kontakt">kontakt</a></li>
+                    <li><a href="/bio">bio</a></li>
+                </ul>
+            </div>
         </nav>
 
         <main>
-            <h1>na webu se pracuje</h1>
-
-            <address>
-                <p>Ing. arch. Barbora Kabeláčová</p>
-                <a href="tel:+420777777523">+420 777 777 523</a>
-                <a href="mailto:">barbora@archiba.cz</a>
-
-                <div>
-                    <p>IČ: 07943474</p>
-                    <p>Sedmihorky 19</p>
-                    <p>511 01 Turnov</p>
-                    <p>Česká republika</p>
-                </div>
-            </address>
+            {% block content %} {% endblock %}
         </main>
 
-        <footer></footer>
+        <footer id="kontakt">
+            <div class="container">
+                <ul class="name">
+                    <li>Ing. arch. Barbora Kabeláčová</li>
+                    <li><a href="tel:+420777777523">+ 420 777 777 523</a></li>
+                    <li><a href="mailto:barbora@archiba.cz">barbora@archiba.cz</a></li>
+                    <li>Kancelář:</li>
+                    <li>Voctářova 2497/18, Praha 8-Libeň</li>
+                    <li>budova <a href="https://goo.gl/maps/3ZmJCn1d8S6cqeM66" target="_blank"
+                            rel="noopener noreferrer">Unilever office</a></li>
+                </ul>
+
+                <div class="insta">
+                    <a href="https://www.instagram.com/_archiba/">
+                        {% include "svg/instagram.twig" %}
+                    </a>
+                </div>
+
+                <address>
+                    <ul>
+                        <li>IČ: 07943474</li>
+                        <li>Sedmihorky 19</li>
+                        <li>511 01 Turnov</li>
+                        <li>Česká republika</li>
+                    </ul>
+                </address>
+            </div>
+        </footer>
     </div>
+    <script type="text/javascript" src="{{ asset('js/app.js') }}"></script>
+    {% block script %}{% endblock %}
 </body>
 
 </html>
-
-<script src="{{ asset('js/app.js') }}"></script>

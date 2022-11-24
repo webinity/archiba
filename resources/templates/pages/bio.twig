@@ -1,0 +1,54 @@
+{% extends "index.twig" %}
+{% block head %}{% endblock %}
+
+{% block content %}
+<section class="about">
+    <div class="container">
+        <div class="about__photo">
+            <figure>
+                <img src="{{asset('imgs/barborka.webp')}}" alt="Ing. arch. Barbora Kabeláčová - Archiba">
+            </figure>
+        </div>
+        <div class="about__content">
+            <h2>Ing. arch.<br>
+                Barbora Kabeláčová</h2>
+            <div>
+                <div>
+                    <p>Achoj jsem holka mýho kluka, on mi ted píše
+                        web a občas se u toho i zlobí. Dal mi v srpnu
+                        prstýnek, což znamená, že mu nevadí nic s
+                        čim ho zlobim já. Tenhle web mi dělá z lásky
+                        a občas i za sex. není to špatný kluk, v týhle
+                        době není nic zadarmo. Mnau. Budeme se
+                        brát a to v květnu 2023. Kdyby měl někdo
+                        zájem o spolupráci, tak nejdřív volejte na
+                        721 257 287.</p>
+                </div>
+                <div class="education">
+                    <div>
+                        <div>
+                            <span class="span__caption">/ VZDĚLÁNÍ /</span>
+                            <ul class="dash">
+                                <li>Gymnázium Turnov</li>
+                                <li>
+                                    Fakulta architektury, ČVUT v Praze</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <span class="span__caption">/ PRACOVNÍ ZKUŠENOSTI /</span>
+                            <ul class="dash">
+                                <li>Top Design s.r.o. / 2016 - 2018</li>
+                                <li>monom works s.r.o. / 2018 - 2022</li>
+                                <li>Archiba / 2022*</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <figure>
+                        <img src="{{asset('imgs/barborka.webp')}}" alt="Ing. arch. Barbora Kabeláčová - Archiba">
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

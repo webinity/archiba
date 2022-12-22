@@ -24,5 +24,10 @@ return function (App $app, Twig $view){
         return $view->render($response, 'pages/sluzby.twig');
     });
 
+    $app->get('/projekty', function (Request $request, Response $response) use ($view) {
+        return $view->render($response, 'pages/projekty.twig');
+    });
+
+
     $app->get('/controller', \Webinity\App\Controllers\HomeController::class . ':index');
 };

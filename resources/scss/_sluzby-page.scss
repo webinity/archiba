@@ -1,0 +1,48 @@
+main {
+    .service {
+        background: #fff;
+
+        .container {
+            >div {
+                margin-top: 100px;
+
+                &:first-of-type {
+                    margin-top: 0;
+                }
+
+                &:last-of-type {
+                    margin-bottom: 100px;
+                }
+
+                h2 {
+                    margin-bottom: 40px
+                }
+
+                span {
+                    margin-bottom: 30px;
+
+                    &.first {
+                        margin-bottom: 20px;
+                    }
+
+                    &.span__price {
+                        margin-bottom: 0;
+                    }
+                }
+
+                >ul {
+                    margin-bottom: 30px;
+                    margin-left: 4px;
+
+                    li {
+                        padding-left: 4px;
+                    }
+
+                    ul {
+                        margin-left: 20px;
+                    }
+                }
+            }
+        }
+    }
+}

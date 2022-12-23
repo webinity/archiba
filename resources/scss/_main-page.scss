@@ -1,0 +1,22 @@
+.intro-slider {
+    .wrapper {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding-bottom: 50px;
+
+        >.swiper {
+            width: 40vw;
+            height: 40vw;
+            margin-bottom: 4%;
+
+            &:nth-of-type(5) {
+                margin-bottom: 0;
+            }
+
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+        }
+    }
+}

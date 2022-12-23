@@ -1,0 +1,47 @@
+main {
+    .about {
+        background: #fff;
+
+        &__photo {
+            figure {
+                img {
+                    width: 100%
+                }
+            }
+        }
+
+        &__content {
+            @include col;
+            margin-top: 50px;
+
+            h2 {
+                margin-bottom: 40px
+            }
+
+            >div {
+                @include col;
+
+                .education {
+                    @include col;
+                    margin-top: 40px;
+
+                    figure {
+                        display: none;
+                    }
+
+                    >div {
+                        @include col;
+
+                        >div {
+                            margin-bottom: 40px;
+
+                            ul {
+                                margin-top: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

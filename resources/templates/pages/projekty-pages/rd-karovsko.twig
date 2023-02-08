@@ -1,0 +1,42 @@
+{% extends "index.twig" %}
+{% block head %}{% endblock %}
+
+{% block content %}
+<section class="project-detail">
+	<div class="container">
+		<h2>RD Károvsko</h2>
+		<span class="span__caption">/ ARCHITEKTONICKÁ STUDIE / NOVOSTAVBA / 2019 /</span>
+
+		<article>
+			Rodinný dům umístěný na podlouhlé parcele s krytým parko-
+			vacím stáním maximálně využívá svým tvarem pozemek. Dům
+			je orientovaný svým obývacím pokojem a přilehlou terasou na
+			jihozápad a tak záda krytého stání vytváří jak kout pro sezení, tak
+			clonu proti severní povětrnosti, která je pro danou lokalitu typická.
+			Hlavním požadavkem bylo propojení se zahradou a využití 2NP
+			pouze pro potřeby rodičů. Z ložnice ve druhém patře je přístupná
+			střešní terasa, ze které lze sejít k venkovnímu sezení. Dětské
+			pokoje mají své soukromí a jsou umístěné na straně u krytého
+			vstupu do domu. V pokročilejším věku uživatelů, se počítá s
+			demontováním příčky mezi dětskými pokoji, kde nově vznikne
+			ložnice a dům se bude užívat především v jeho přízemí, druhé
+			patro pak bude sloužit návštěvám.
+		</article>
+
+		<div class="project-photos">
+			<figure>
+				<img src="{{ asset('imgs/projekty/rd-karovsko/rd_karovsko_uvodni.webp') }}" loading="lazy" alt="">
+			</figure>
+			<figure>
+				<img src="{{ asset('imgs/projekty/rd-karovsko/rd_karovsko_02.webp') }}" loading="lazy" alt="">
+			</figure>
+			<figure>
+				<img src="{{ asset('imgs/projekty/rd-karovsko/rd_karovsko_03.webp') }}" loading="lazy" alt="">
+			</figure>
+			<figure>
+				<img src="{{ asset('imgs/projekty/rd-karovsko/rd_karovsko_04.webp') }}" loading="lazy" alt="">
+			</figure>
+		</div>
+	</div>
+</section>
+{% endblock %}

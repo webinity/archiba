@@ -1,0 +1,39 @@
+{% extends "index.twig" %}
+{% block head %}{% endblock %}
+
+{% block content %}
+<section class="project-detail">
+	<div class="container">
+		<h2>Zelená cesta</h2>
+		<span class="span__caption">/ ARCHITEKTONICKÁ STUDIE / NOVOSTAVBA / 2019 /</span>
+
+		<article>
+			Minimalistický rodinný dům se sedlovou střechou a dřevěnou
+			fasádou přirozeně zapadá do krajiny Českého ráje. Dům na
+
+			pozemku 10 arů vytváří zázemí pro čtyřčlennou rodinu a dvě os-
+			obní auta krytá přístřeškem. Zóny jsou v domě oddělené, noční je
+
+			umístěná ve druhém nadzemním podlaží a denní zóna v prvním
+			podlaží. Dům obléha z jižní a východní strany příjezdová cesta a
+			tak hlavní obytná místnost s terasou jsou orientovány na západ
+			pro dostatek soukromí rodiny.
+		</article>
+
+		<div class="project-photos">
+			<figure>
+				<img src="{{ asset('imgs/projekty/zelena-cesta/zelena_cesta_uvodni.webp') }}" loading="lazy" alt="">
+			</figure>
+			<figure>
+				<img src="{{ asset('imgs/projekty/zelena-cesta/zelena_cesta_02.webp') }}" loading="lazy" alt="">
+			</figure>
+			<figure>
+				<img src="{{ asset('imgs/projekty/zelena-cesta/zelena_cesta_03.webp') }}" loading="lazy" alt="">
+			</figure>
+			<figure>
+				<img src="{{ asset('imgs/projekty/zelena-cesta/zelena_cesta_04.webp') }}" loading="lazy" alt="">
+			</figure>
+		</div>
+	</div>
+</section>
+{% endblock %}

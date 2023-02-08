@@ -20,9 +20,9 @@ closeNav.addEventListener('click', () => {
 	document.querySelector('#nav-open').classList.remove('open');
 });
 
-import Swiper, { Autoplay, EffectFade } from 'swiper';
+import Swiper, { Autoplay, EffectFade, Navigation } from 'swiper';
 
-Swiper.use([Autoplay, EffectFade]);
+Swiper.use([Autoplay, EffectFade, Navigation]);
 
 const swiper1 = new Swiper('.swiper1', {
 	effect: 'fade',
@@ -147,4 +147,3 @@ const swiper6 = new Swiper('.swiper6', {
 		},
 	  },
 });
-

@@ -1,0 +1,50 @@
+{% extends "index.twig" %}
+{% block head %}{% endblock %}
+
+{% block content %}
+<section class="project-detail">
+	<div class="container">
+		<h2>Socha TGM</h2>
+		<span class="span__caption">/ VÝTVARNÁ SOUTĚŽ / 2022 /</span>
+
+		<article>
+			Hlavní nádraží Turnov je frekventovaným místem nejen pro místní obyvatele, ale i pro turistické návštěvníky,
+			jejichž cesty vedou do Českého ráje. Proti tomuto komunikačnímu uzlu a historicky
+			známému místu, kam T.G.M. před 100 lety zavítal, je v ose s ulicí
+			„U Nádraží“ umístěn navrhovaný objekt.
+			<br>
+			Hlavním cílem bylo vytvořit abstraktní prostorovou kompozici,
+			která bude svou formou interagovat s divákem. Busta je průchozí,
+			v nočním režimu je podsvícena a její opískované hrany jsou ve
+			tmě zřetelnější a ve státní svátky je každý blok podsvícen barvou trikolory. Při pohledu z čela by se
+			geometre ze tří bloků měla spojit v jeden obrazec - profil T.G.M.
+			<br>
+			Hlavním materiálem je sklo jako tradiční a typický materiál pro
+			severní Čechy a jeho sklářský průmysl. Průhledost je podstatou
+			návrhu, nový objekt by neměl vytvářet vizuální bariéru, ale díky
+			transparentnímu sklu by se měl nenásilně integrovat do okolního
+			prostředí a stát se tak jeho součástí. „My jsme Masaryk“ je heslo, které nese jeden ze tří bloků, skrze
+			transparentní materiál je viditelná přítomnost okolního světa, o který
+			se nám zasloužil, přeneseně “My jsme Masaryk”.
+		</article>
+
+		<div class="project-photos">
+			<figure>
+				<img src="{{ asset('imgs/projekty/tgm/tgm_uvodni.webp') }}" loading="lazy" alt="">
+			</figure>
+			<figure>
+				<img src="{{ asset('imgs/projekty/tgm/tgm_02.webp') }}" loading="lazy" alt="">
+			</figure>
+			<figure>
+				<img src="{{ asset('imgs/projekty/tgm/tgm_03.webp') }}" loading="lazy" alt="">
+			</figure>
+			<figure>
+				<img src="{{ asset('imgs/projekty/tgm/tgm_04.webp') }}" loading="lazy" alt="">
+			</figure>
+			<figure>
+				<img src="{{ asset('imgs/projekty/tgm/tgm_05.webp') }}" loading="lazy" alt="">
+			</figure>
+		</div>
+	</div>
+</section>
+{% endblock %}

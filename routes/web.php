@@ -13,7 +13,7 @@ return function (App $app, Twig $view){
      * If you wish to unload this specific file, remove the reference in RoutesService.php
      */
     $app->get('/', function (Request $request, Response $response) use ($view) {
-        return $view->render($response, 'pages/main.twig', ['text' => 'Hello World']);
+        return $view->render($response, 'pages/main.twig');
     });
 
     $app->get('/bio', function (Request $request, Response $response) use ($view) {
@@ -28,6 +28,41 @@ return function (App $app, Twig $view){
         return $view->render($response, 'pages/projekty.twig');
     });
 
+    $app->get('/projekty/tovarna-na-krasno', function (Request $request, Response $response) use ($view) {
+        return $view->render($response, 'pages/projekty-pages/tovarna-na-krasno.twig');
+    });
+
+    $app->get('/projekty/rd-karovsko', function (Request $request, Response $response) use ($view) {
+        return $view->render($response, 'pages/projekty-pages/rd-karovsko.twig');
+    });
+
+    $app->get('/projekty/byt-evropska', function (Request $request, Response $response) use ($view) {
+        return $view->render($response, 'pages/projekty-pages/byt-evropska.twig');
+    });
+    
+    $app->get('/projekty/hajenka', function (Request $request, Response $response) use ($view) {
+        return $view->render($response, 'pages/projekty-pages/hajenka.twig');
+    });
+
+    $app->get('/projekty/zelena-cesta', function (Request $request, Response $response) use ($view) {
+        return $view->render($response, 'pages/projekty-pages/zelena-cesta.twig');
+    });
+
+    $app->get('/projekty/socha-tgm', function (Request $request, Response $response) use ($view) {
+        return $view->render($response, 'pages/projekty-pages/socha-tgm.twig');
+    });
+
+    $app->get('/projekty/byt-bubenec', function (Request $request, Response $response) use ($view) {
+        return $view->render($response, 'pages/projekty-pages/byt-bubenec.twig');
+    });
+
+    $app->get('/projekty/byt-pardubice', function (Request $request, Response $response) use ($view) {
+        return $view->render($response, 'pages/projekty-pages/byt-pardubice.twig');
+    });
+
+    $app->get('/projekty/byt-domazlice', function (Request $request, Response $response) use ($view) {
+        return $view->render($response, 'pages/projekty-pages/byt-domazlice.twig');
+    });
 
     $app->get('/controller', \Webinity\App\Controllers\HomeController::class . ':index');
 };

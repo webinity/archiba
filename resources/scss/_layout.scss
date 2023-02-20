@@ -14,6 +14,7 @@ h2,
 h3,
 h4,
 h5,
+article,
 p {
 	margin: 0;
 	padding: 0;
@@ -124,6 +125,48 @@ nav {
 					text-decoration: none;
 					letter-spacing: 0.5px;
 					font-size: 0.875rem;
+				}
+			}
+		}
+	}
+
+	@media screen and (min-width: $pc) {
+		height: 60px;
+
+		.hamburger {
+			display: none;
+		}
+
+		.nav-list {
+			@include row;
+			position: relative;
+			background: transparent;
+			top: initial;
+			left: initial;
+			right: initial;
+			padding-top: 0;
+			padding-bottom: 0;
+			width: max-content;
+
+			.close {
+				display: none;
+			}
+
+			ul {
+				@include row;
+
+				li {
+					padding-bottom: 0;
+					margin-left: 40px;
+
+					&:first-of-type {
+						margin-left: 0;
+					}
+
+					a {
+						color: #000;
+						font-size: 1.125rem;
+					}
 				}
 			}
 		}

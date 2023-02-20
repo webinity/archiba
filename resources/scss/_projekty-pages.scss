@@ -1,0 +1,37 @@
+.project-detail {
+    h2 {
+        color: #000;
+        margin-bottom: 40px;
+    }
+
+    span {
+        margin-bottom: 30px;
+    }
+
+    article {
+        margin-bottom: 40px;
+    }
+
+    .project-photos {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-bottom: 50px;
+
+        figure {
+            height: 100%;
+            width: 100%;
+
+            &.short {
+                width: calc(50% - 5px);
+                height: auto;
+            }
+
+            img {
+                height: 100%;
+                width: 100%;
+            }
+        }
+    }
+}

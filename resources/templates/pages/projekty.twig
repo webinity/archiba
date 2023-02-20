@@ -3,41 +3,66 @@
 
 {% block content %}
 <section class="projects">
-    <div class="container">
-        <div class="project">
-            <a href="http://">
-                <h2>Továrna na krásno</h2>
-                <img src="{{ asset('imgs/a1.webp') }}" alt="">
-            </a>
-            <a href="http://">
-                <h2>Hájenka</h2>
-                <img src="{{ asset('imgs/a1.webp') }}" alt="">
-            </a>
-            <a href="http://">
-                <h2>Károvsko</h2>
-                <img src="{{ asset('imgs/a1.webp') }}" alt="">
-            </a>
-            <a href="http://">
-                <h2>Vítězné náměstí</h2>
-                <img src="{{ asset('imgs/a1.webp') }}" alt="">
-            </a>
-            <a href="http://">
-                <h2>Zelená cesta</h2>
-                <img src="{{ asset('imgs/a1.webp') }}" alt="">
-            </a>
-            <a href="http://">
-                <h2>Evropská</h2>
-                <img src="{{ asset('imgs/a1.webp') }}" alt="">
-            </a>
-            <a href="http://">
-                <h2>Byt Pardubice</h2>
-                <img src="{{ asset('imgs/a1.webp') }}" alt="">
-            </a>
-            <a href="http://">
-                <h2>TGM</h2>
-                <img src="{{ asset('imgs/a1.webp') }}" alt="">
-            </a>
-        </div>
-    </div>
+	<div class="container">
+		<div class="project">
+			<a href="/projekty/tovarna-na-krasno">
+				<h2>Továrna na krásno</h2>
+				<figure>
+					<img src="{{ asset('imgs/projekty/tovarna-na-krasno/tovarna_na_krasno_uvodni.webp') }}"
+						loading="lazy" alt="">
+				</figure>
+			</a>
+			<a href="/projekty/hajenka">
+				<h2>Hájenka</h2>
+				<figure>
+					<img src="{{ asset('imgs/projekty/hajenka/hajenka_uvodni.webp') }}" loading="lazy" alt="">
+				</figure>
+			</a>
+			<a href="/projekty/byt-bubenec">
+				<h2>Byt Bubeneč</h2>
+				<figure>
+					<img src="{{ asset('imgs/projekty/byt-bubenec/byt_bubenec_uvodni.webp') }}" loading="lazy" alt="">
+				</figure>
+			</a>
+			<a href="/projekty/byt-evropska">
+				<h2>Byt Evropská</h2>
+				<figure>
+					<img src="{{ asset('imgs/projekty/byt-evropska/byt_evropska_uvodni.webp') }}" loading="lazy" alt="">
+				</figure>
+			</a>
+			<a href="/projekty/rd-karovsko">
+				<h2>Károvsko</h2>
+				<figure>
+					<img src="{{ asset('imgs/projekty/rd-karovsko/rd_karovsko_uvodni.webp') }}" loading="lazy" alt="">
+				</figure>
+			</a>
+			<a href="/projekty/byt-domazlice">
+				<h2>Byt Domažlice</h2>
+				<figure>
+					<img src="{{ asset('imgs/projekty/byt-domazlice/byt_domazlice_uvodni.webp') }}" loading="lazy"
+						alt="">
+				</figure>
+			</a>
+			<a href="/projekty/byt-pardubice">
+				<h2>Byt Pardubice</h2>
+				<figure>
+					<img src="{{ asset('imgs/projekty/byt-pardubice/byt_pardubice_uvodni.webp') }}" loading="lazy"
+						alt="">
+				</figure>
+			</a>
+			<a href="/projekty/zelena-cesta">
+				<h2>Zelená cesta</h2>
+				<figure>
+					<img src="{{ asset('imgs/projekty/zelena-cesta/zelena_cesta_uvodni.webp') }}" loading="lazy" alt="">
+				</figure>
+			</a>
+			<a href="/projekty/socha-tgm">
+				<h2>TGM</h2>
+				<figure>
+					<img src="{{ asset('imgs/projekty/tgm/tgm_uvodni.webp') }}" loading="lazy" alt="">
+				</figure>
+			</a>
+		</div>
+	</div>
 </section>
 {% endblock %}

@@ -20,6 +20,11 @@ closeNav.addEventListener('click', () => {
 	document.querySelector('#nav-open').classList.remove('open');
 });
 
+const closeNavKontakt = document.querySelector('.close-nav');
+closeNavKontakt.addEventListener('click', () => {
+	document.querySelector('#nav-open').classList.remove('open');
+});
+
 import Swiper, { Autoplay, EffectFade, Navigation } from 'swiper';
 
 Swiper.use([Autoplay, EffectFade, Navigation]);

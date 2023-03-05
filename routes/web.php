@@ -44,8 +44,8 @@ return function (App $app, Twig $view){
         return $view->render($response, 'pages/projekty-pages/hajenka.twig');
     });
 
-    $app->get('/projekty/zelena-cesta', function (Request $request, Response $response) use ($view) {
-        return $view->render($response, 'pages/projekty-pages/zelena-cesta.twig');
+    $app->get('/projekty/rd-sedmihorky', function (Request $request, Response $response) use ($view) {
+        return $view->render($response, 'pages/projekty-pages/rd-sedmihorky.twig');
     });
 
     $app->get('/projekty/socha-tgm', function (Request $request, Response $response) use ($view) {

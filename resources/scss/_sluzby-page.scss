@@ -2,6 +2,12 @@ main {
     .service {
         background: #fff;
 
+        &__dokumentace {
+            p {
+                margin-bottom: 20px;
+            }
+        }
+
         .container {
             >div {
                 margin-top: 100px;

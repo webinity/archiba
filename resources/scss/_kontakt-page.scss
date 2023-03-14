@@ -43,5 +43,11 @@ main {
                 }
             }
         }
+
+        @media screen and (min-width: $pc) {
+            .container {
+                max-width: 450px;
+            }
+        }
     }
 }

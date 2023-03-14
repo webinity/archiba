@@ -41,6 +41,13 @@ const swiper1 = new Swiper('.swiper1', {
 	autoplay: {
 		delay: 4000,	  
 	},
+	breakpoints: {
+		900: {
+			autoplay: {
+				delay: 6000
+			}
+		}
+	},
 	on: {
 		autoplay() {
 			swiper1.autoplay.stop()		  
@@ -89,6 +96,13 @@ const swiper3 = new Swiper('.swiper3', {
 	autoplay: {
 		delay: 2000,	  
 	},
+	breakpoints: {
+		900: {
+			autoplay: {
+				delay: 4000
+			}
+		}
+	},
 	on: {
 		autoplay() {
 			swiper3.autoplay.stop()		  
@@ -107,6 +121,13 @@ const swiper4 = new Swiper('.swiper4', {
 	centeredSlides: true,
 	autoplay: {
 		delay: 5000,	  
+	},
+	breakpoints: {
+		900: {
+			autoplay: {
+				delay: 3000
+			}
+		}
 	},
 	on: {
 		autoplay() {
@@ -127,6 +148,13 @@ const swiper5 = new Swiper('.swiper5', {
 	autoplay: {
 		delay: 6000,	  
 	},
+	breakpoints: {
+		900: {
+			autoplay: {
+				delay: 5000
+			}
+		}
+	},
 	on: {
 		autoplay() {
 			swiper5.autoplay.stop()		  
@@ -145,6 +173,13 @@ const swiper6 = new Swiper('.swiper6', {
 	centeredSlides: true,
 	autoplay: {
 		delay: 3000,		
+	},
+	breakpoints: {
+		900: {
+			autoplay: {
+				delay: 2000
+			}
+		}
 	},
 	on: {
 		autoplay() {

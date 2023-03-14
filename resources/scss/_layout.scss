@@ -23,6 +23,10 @@ p {
 	font-weight: 200;
 	font-size: 0.813rem;
 	letter-spacing: 0.2px;
+
+	@media screen and (min-width: $pc) {
+        font-size: 0.85rem;
+    }
 }
 
 h1,
@@ -69,6 +73,7 @@ figure {
 }
 
 nav {
+	font-family: 'Bahnschrift', sans-serif;
 	background: #fff;
 	height: 45px;
 	@include row;
@@ -180,8 +185,17 @@ nav {
 		}
 	}
 
+	@media screen and (min-width: $tablet) {
+		padding: 60px;
+	}
+
 	@media screen and (min-width: $pc) {
 		height: 60px;
+		padding-left: 0;
+		padding-right: 0;
+		padding-top: 90px;
+		max-width: 900px;
+		@include mx-auto;
 
 		.hamburger {
 			display: none;
@@ -231,7 +245,9 @@ main {
 		padding-bottom: 20vw;
 	}
 
-	@media screen and (min-width: $pc) {}
+	@media screen and (min-width: $pc) {
+		padding-top: 150px;
+	}
 }
 
 footer {

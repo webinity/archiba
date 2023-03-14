@@ -6,6 +6,10 @@
     @media screen and (min-width: ($container-mob + 60px)) {
         padding: 0;
     }
+
+    @media screen and (min-width: $pc) {
+        max-width: 900px;
+    }
 }
 
 .dash {
@@ -14,6 +18,10 @@
     list-style: '-';
     font-weight: 200;
     letter-spacing: 0.2px;
+
+    @media screen and (min-width: $pc) {
+        font-size: 0.85rem;
+    }
 }
 
 .span {
@@ -24,6 +32,10 @@
         line-height: 1.4;
         font-weight: 200;
         letter-spacing: 0.2px;
+
+        @media screen and (min-width: $pc) {
+            font-size: 0.85rem;
+        }
     }
 
     &__price {

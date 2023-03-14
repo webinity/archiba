@@ -53,6 +53,10 @@ main {
                     }
                 }
             }
+
+            @media screen and (min-width: $pc) {
+                max-width: 450px;
+            }
         }
     }
 }

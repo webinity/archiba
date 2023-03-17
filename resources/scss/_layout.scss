@@ -185,8 +185,7 @@ nav {
 						color: #fff;
 						text-decoration: none;
 						letter-spacing: 0.5px;
-						font-size: 0.875rem;
-						scroll-margin-top: 50px;
+						font-size: 0.875rem;						
 					}
 				}
 			}
@@ -265,6 +264,10 @@ main {
 footer {
 	background: $main-green;
 	color: #fff;
+
+	&#kontakt {
+		scroll-margin-top: 50px;
+	}
 
 	.container {
 		padding: 100px 0;

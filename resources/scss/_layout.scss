@@ -75,165 +75,177 @@ figure {
 nav {
 	font-family: 'Bahnschrift', sans-serif;
 	background: #fff;
-	height: 45px;
-	@include row;
-	justify-content: space-between;
-	align-items: center;
-	padding: 30px;
+	display: flex;
+	width: 100%;
 	position: sticky;
 	z-index: 999;
 	top: 0;
-
-	>a {
-		height: 100%;
-		display: flex;
+	
+	> div {
+		height: 45px;
+		width: 100%;
+		padding: 30px;
+		@include row;
+		justify-content: space-between;
 		align-items: center;
 
-		img {
+
+		>a {
 			height: 100%;
-		}
-	}
-
-	.hamburger {
-		display: flex;
-		align-items: center;
-		
-		&__lines {
-			width: 20px;
-			height: 17px;
 			display: flex;
-			flex-direction: column;
-			justify-content: space-between;
-		
-			span {
-				width: 100%;
-				height: 1px;
-				background-color: #000;
+			align-items: center;
+	
+			img {
+				height: 100%;
 			}
 		}
-	}
-
-	.nav-list {
-		@include col;
-		position: absolute;
-		z-index: 2;
-		background: $main-green;
-		width: 100%;
-		top: 0;
-		left: 0;
-		right: 0;
-		padding-bottom: 100px;
-		display: none;
-
-		&.open {
+	
+		.hamburger {
 			display: flex;
-		}
-
-		.close {
-			display: flex;
-			justify-content: flex-end;
 			align-items: center;
-			padding-top: 30px;
-			padding-right: 28px; /*because spacing around close btn*/
-			height: 45px;
-
+			
 			&__lines {
-				width: 25px;
-				height: 25px;
-				position: relative;
+				width: 20px;
+				height: 17px;
 				display: flex;
 				flex-direction: column;
-				justify-content: center;
+				justify-content: space-between;
 			
-				&::before, &::after {
-					position: absolute;
-					content: '';
+				span {
 					width: 100%;
 					height: 1px;
-					background-color: #fff;
-				}
-			
-				&::before {
-					transform: rotate(45deg);
-				}
-			
-				&::after {
-					transform: rotate(-45deg);
+					background-color: #000;
 				}
 			}
 		}
 
-
-		ul {
-			padding-top: 25px;
-
-			li {
-				text-align: center;
-				padding-bottom: 20px;
-
-				&:last-of-type {
-					padding-bottom: 0;
+		.nav-list {
+			@include col;
+			position: absolute;
+			z-index: 2;
+			background: $main-green;
+			width: 100%;
+			top: 0;
+			left: 0;
+			right: 0;
+			padding-bottom: 100px;
+			display: none;
+	
+			&.open {
+				display: flex;
+			}
+	
+			.close {
+				display: flex;
+				justify-content: flex-end;
+				align-items: center;
+				padding-top: 30px;
+				padding-right: 28px; /*because spacing around close btn*/
+				height: 45px;
+	
+				&__lines {
+					width: 25px;
+					height: 25px;
+					position: relative;
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+				
+					&::before, &::after {
+						position: absolute;
+						content: '';
+						width: 100%;
+						height: 1px;
+						background-color: #fff;
+					}
+				
+					&::before {
+						transform: rotate(45deg);
+					}
+				
+					&::after {
+						transform: rotate(-45deg);
+					}
 				}
-
-				a {
-					color: #fff;
-					text-decoration: none;
-					letter-spacing: 0.5px;
-					font-size: 0.875rem;
+			}
+	
+	
+			ul {
+				padding-top: 25px;
+	
+				li {
+					text-align: center;
+					padding-bottom: 20px;
+	
+					&:last-of-type {
+						padding-bottom: 0;
+					}
+	
+					a {
+						color: #fff;
+						text-decoration: none;
+						letter-spacing: 0.5px;
+						font-size: 0.875rem;
+						scroll-margin-top: 50px;
+					}
 				}
 			}
 		}
 	}
 
 	@media screen and (min-width: $tablet) {
-		padding: 60px;
+		> div {
+			padding: 60px;
+		}
 	}
 
-	@media screen and (min-width: $pc) {
-		height: 60px;
-		padding-left: 0;
-		padding-right: 0;
-		padding-top: 90px;
-		max-width: 900px;
-		@include mx-auto;
-
-		.hamburger {
-			display: none;
-		}
-
-		.nav-list {
-			@include row;
-			position: relative;
-			background: transparent;
-			top: initial;
-			left: initial;
-			right: initial;
-			padding-top: 0;
-			padding-bottom: 0;
-			width: max-content;
-
-			.close {
+	@media screen and (min-width: $pc) {		
+		> div {
+			height: 60px;
+			padding-left: 0;
+			padding-right: 0;
+			padding-top: 90px;
+			max-width: 900px;
+			@include mx-auto;
+			.hamburger {
 				display: none;
 			}
-
-			ul {
+	
+			.nav-list {
 				@include row;
-
-				li {
-					padding-bottom: 0;
-					margin-left: 40px;
-
-					&:first-of-type {
-						margin-left: 0;
-					}
-
-					a {
-						color: #000;
-						font-size: 1rem;
+				position: relative;
+				background: transparent;
+				top: initial;
+				left: initial;
+				right: initial;
+				padding-top: 0;
+				padding-bottom: 0;
+				width: max-content;
+	
+				.close {
+					display: none;
+				}
+	
+				ul {
+					@include row;
+	
+					li {
+						padding-bottom: 0;
+						margin-left: 40px;
+	
+						&:first-of-type {
+							margin-left: 0;
+						}
+	
+						a {
+							color: #000;
+							font-size: 1rem;
+						}
 					}
 				}
 			}
 		}
+
 	}
 }
 

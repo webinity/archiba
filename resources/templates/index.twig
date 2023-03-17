@@ -19,22 +19,24 @@
 	<body>
 		<div id="app">
 			<nav>
-				<a class="logo" href="/">
-					<img src="{{asset('imgs/logo.png')}}" alt="Logo Archiba">
-				</a>
-				<div class="hamburger">
-					{% include "partials/hamburger.twig" %}
-				</div>
-				<div class="nav-list" id="nav-open">
-					<div class="close">
-						{% include "partials/close.twig" %}
+				<div>
+					<a class="logo" href="/">
+						<img src="{{asset('imgs/logo.png')}}" alt="Logo Archiba">
+					</a>
+					<div class="hamburger">
+						{% include "partials/hamburger.twig" %}
 					</div>
-					<ul>
-						<li><a href="/projekty">projekty</a></li>
-						<li><a href="/sluzby">služby</a></li>
-						<li class="close-nav"><a href="#kontakt">kontakt</a></li>
-						<li><a href="/bio">bio</a></li>
-					</ul>
+					<div class="nav-list" id="nav-open">
+						<div class="close">
+							{% include "partials/close.twig" %}
+						</div>
+						<ul>
+							<li><a href="/projekty">projekty</a></li>
+							<li><a href="/sluzby">služby</a></li>
+							<li class="close-nav"><a href="#kontakt">kontakt</a></li>
+							<li><a href="/bio">bio</a></li>
+						</ul>
+					</div>
 				</div>
 			</nav>
 

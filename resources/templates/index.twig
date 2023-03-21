@@ -1,85 +1,102 @@
 <!DOCTYPE html>
 <html lang="cs">
-	<head>
-		<meta charset="UTF-8"/>
-		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-		<link rel="shortcut icon" href="{{asset('imgs/favicon.ico')}}" type="image/x-icon">
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-		<link href="http://fonts.cdnfonts.com/css/bahnschrift" rel="stylesheet">
-		<link rel="stylesheet" href="{{asset('css/styles.css')}}">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon"
+            href="{{ asset('imgs/favicon.ico') }}"
+            type="image/x-icon" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+            rel="stylesheet" />
+        <link href="http://fonts.cdnfonts.com/css/bahnschrift"
+            rel="stylesheet" />
+        <link rel="stylesheet" href="{{ asset('css/styles.css') }}" />
 
-		<title>
-			Barbora Kabeláčová | architektura a interiéry
-		</title>
-	</head>
+        <title>
+            Barbora Kabeláčová | architektura a interiéry
+        </title>
+    </head>
 
-	<body>
-		<div id="app">
-			<nav>
-				<div>
-					<a class="logo" href="/">
-						<img src="{{asset('imgs/logo.png')}}" alt="Logo Archiba">
-					</a>
-					<div class="hamburger">
-						{% include "partials/hamburger.twig" %}
-					</div>
-					<div class="nav-list" id="nav-open">
-						<div class="close">
-							{% include "partials/close.twig" %}
-						</div>
-						<ul>
-							<li><a href="/projekty">projekty</a></li>
-							<li><a href="/sluzby">služby</a></li>
-							<li class="close-nav"><a href="#kontakt">kontakt</a></li>
-							<li><a href="/bio">bio</a></li>
-						</ul>
-					</div>
-				</div>
-			</nav>
+    <body>
+        <div id="app">
+            <nav>
+                <div>
+                    <a class="logo" href="/">
+                        <img src="{{ asset('imgs/logo.png') }}"
+                            alt="Logo Archiba" />
+                    </a>
+                    <div class="hamburger">
+                        {% include 'partials/hamburger.twig' %}
+                    </div>
+                    <div class="nav-list" id="nav-open">
+                        <div class="close">
+                            {% include 'partials/close.twig' %}
+                        </div>
+                        <ul>
+                            <li><a href="/projekty">projekty</a></li>
+                            <li><a href="/sluzby">služby</a></li>
+                            <li class="close-nav">
+                                <a href="#kontakt">kontakt</a>
+                            </li>
+                            <li><a href="/bio">bio</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
 
-			<main>
-				{% block content %}{% endblock %}
-			</main>
+            <main>
+                {% block content %}
+                {% endblock %}
+            </main>
 
-			<footer id="kontakt">
-				<div class="container">
-					<ul class="name">
-						<li>Ing. arch. Barbora Kabeláčová</li>
-						<li>
-							<a href="tel:+420777777523">+ 420 777 777 523</a>
-						</li>
-						<li>
-							<a href="mailto:barbora@archiba.cz">barbora@archiba.cz</a>
-						</li>
-						<li>Kancelář:</li>
-						<li>Voctářova 2497/18, Praha 8-Libeň</li>
-						<li>budova
-							<a href="https://goo.gl/maps/3ZmJCn1d8S6cqeM66" target="_blank" rel="noopener noreferrer">myhive Palmovka</a>
-						</li>
-					</ul>
+            <footer id="kontakt">
+                <div class="container">
+                    <ul class="name">
+                        <li>Ing. arch. Barbora Kabeláčová</li>
+                        <li>
+                            <a href="tel:+420777777523">+ 420 777 777 523</a>
+                        </li>
+                        <li>
+                            <a href="mailto:barbora@archiba.cz">
+                                barbora@archiba.cz
+                            </a>
+                        </li>
+                        <li>Kancelář:</li>
+                        <li>Voctářova 2497/18, Praha 8-Libeň</li>
+                        <li>
+                            budova
+                            <a href="https://goo.gl/maps/3ZmJCn1d8S6cqeM66"
+                                target="_blank"
+                                rel="noopener noreferrer">
+                                myhive Palmovka
+                            </a>
+                        </li>
+                    </ul>
 
-					<div class="insta">
-						<a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/_archiba/">
-							{% include "svg/instagram.twig" %}
-						</a>
-					</div>
+                    <div class="insta">
+                        <a target="_blank"
+                            rel="noopener noreferrer"
+                            href="https://www.instagram.com/_archiba/">
+                            {% include 'svg/instagram.twig' %}
+                        </a>
+                    </div>
 
-					<address>
-						<ul>
-							<li>IČ: 07943474</li>
-							<li>Sedmihorky 19</li>
-							<li>511 01 Turnov</li>
-							<li>Česká republika</li>
-						</ul>
-					</address>
-				</div>
-			</footer>
-		</div>
-		<script type="text/javascript" src="{{ asset('js/app.js') }}"></script>
-		{% block script %}{% endblock %}
-	</body>
-
+                    <address>
+                        <ul>
+                            <li>IČ: 07943474</li>
+                            <li>Sedmihorky 19</li>
+                            <li>511 01 Turnov</li>
+                            <li>Česká republika</li>
+                        </ul>
+                    </address>
+                </div>
+            </footer>
+        </div>
+        <script type="text/javascript" src="{{ asset('js/app.js') }}"></script>
+        {% block script %}
+        {% endblock %}
+    </body>
 </html>

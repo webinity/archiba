@@ -1,15 +1,3 @@
-import Vue from 'vue';
-
-import PhotoChange from './components/PhotoChange.vue';
-
-
-new Vue({
-    el: '#app',
-    components: {
-        PhotoChange
-    },
-})
-
 const hamburgerNav = document.querySelector('.hamburger');
 hamburgerNav.addEventListener('click', () => {
 	document.querySelector('#nav-open').classList.add('open');

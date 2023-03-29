@@ -52,16 +52,6 @@ const swiper1 = new Swiper('.swiper1', {
 		autoplay() {
 			swiper1.autoplay.stop()		  
 		},
-		autoplayStop() {  
-			setTimeout(() => {
-				swiper1.autoplay.start()	
-				swiper2.autoplay.start()
-				swiper3.autoplay.start()	
-				swiper4.autoplay.start()	
-				swiper5.autoplay.start()	
-				swiper6.autoplay.start()	
-			}, 1000)
-		},
 	  },
 });
 
@@ -80,7 +70,18 @@ const swiper2 = new Swiper('.swiper2', {
 	on: {
 		autoplay() {
 			swiper2.autoplay.stop()		  
-		}
+		},
+
+		autoplayStop() {  
+			setTimeout(() => {
+				swiper1.autoplay.start()	
+				swiper2.autoplay.start()
+				swiper3.autoplay.start()	
+				swiper4.autoplay.start()	
+				swiper5.autoplay.start()	
+				swiper6.autoplay.start()	
+			}, 6000)
+		},
 	  },
 });
 

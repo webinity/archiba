@@ -6,7 +6,7 @@
     "scripts": {
         "dev": "npx mix",
         "prettier": "npx prettier --write './resources/templates/*.twig'",
-        "server": "php -S localhost:8080 -t public/"
+        "server": "php -S localhost:8081 -t public/"
     },
     "repository": {
         "type": "git",
@@ -38,7 +38,6 @@
     "dependencies": {
         "axios": "^0.27.2",
         "prettier-plugin-twig-melody": "^0.4.6",
-        "swiper": "^8.4.4",
-        "vue": "^2.6.14"
+        "swiper": "^8.4.4"
     }
 }

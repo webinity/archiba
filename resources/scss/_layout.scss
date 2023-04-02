@@ -25,7 +25,8 @@ p {
 	letter-spacing: 0.2px;
 
 	@media screen and (min-width: $pc) {
-        font-size: 0.9rem;
+        font-size: 0.85rem;
+		font-weight: 300;
     }
 }
 
@@ -195,6 +196,7 @@ nav {
 	@media screen and (min-width: $tablet) {
 		> div {
 			padding: 60px;
+			padding-bottom: 30px;
 		}
 	}
 

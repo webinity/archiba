@@ -1,35 +1,70 @@
-{% extends "index.twig" %}
-{% block head %}{% endblock %}
+{% extends 'index.twig' %}
+{% block head %}
+
+{% endblock %}
 
 {% block content %}
-<section class="project-detail">
-	<div class="container">
-		<h2>RD Károvsko</h2>
-		<span class="span__caption">/&nbsp;ARCHITEKTONICKÁ STUDIE /&nbsp;NOVOSTAVBA&nbsp;/&nbsp;2019&nbsp;/</span>
+    <section class="project-detail">
+        <div class="container">
+            <h2>
+                RD Károvsko
+            </h2>
+            <span class="span__caption">
+                /&nbsp;ARCHITEKTONICKÁ STUDIE
+                /&nbsp;NOVOSTAVBA&nbsp;/&nbsp;2019&nbsp;/
+            </span>
 
-		<article>
-			Rodinný dům umístěný na podlouhlé parcele s krytým parkovacím stáním maximálně využívá tvarem svůj pozemek. 
-			Obývací pokoj a přilehlá terasa jsou orientovány na jihozápad a tak záda krytého stání vytváří jak soukromí pro sezení, tak clonu proti severní povětrnosti, která je pro danou lokalitu typická. 
-			Hlavním požadavkem bylo propojení domu se zahradou a využití 2NP pouze pro potřeby rodičů. 
-			Z ložnice lze projít na střešní terasu, která je přístupná venkovním schodištěm ze zahrady. 
-			Dětské pokoje mají své soukromí v přízemí v blízkosti hlavního vstupu. 
-			V pokročilejším věku uživatelů, se počítá s demontováním SDK příčky mezi dětskými pokoji, kde nově vznikne ložnice a dům se bude užívat především v jeho přízemí, druhé patro pak bude sloužit návštěvám.
-		</article>
+            <article>
+                Rodinný dům umístěný na podlouhlé parcele s krytým parkovacím
+                stáním maximálně využívá tvarem svůj pozemek. Obývací pokoj a
+                přilehlá terasa jsou orientovány na jihozápad a tak záda krytého
+                stání vytváří jak soukromí pro sezení, tak clonu proti severní
+                povětrnosti, která je pro danou lokalitu typická. Hlavním
+                požadavkem bylo propojení domu se zahradou a využití 2NP pouze
+                pro potřeby rodičů. Z ložnice lze projít na střešní terasu,
+                která je přístupná venkovním schodištěm ze zahrady. Dětské
+                pokoje mají své soukromí v přízemí v blízkosti hlavního vstupu.
+                V pokročilejším věku uživatelů, se počítá s demontováním SDK
+                příčky mezi dětskými pokoji, kde nově vznikne ložnice a dům se
+                bude užívat především v jeho přízemí, druhé patro pak bude
+                sloužit návštěvám.
+            </article>
 
-		<div class="project-photos">
-			<figure>
-				<img src="{{ asset('imgs/projekty/rd-karovsko/rd_karovsko_uvodni.webp') }}" loading="lazy" alt="">
-			</figure>
-			<figure>
-				<img src="{{ asset('imgs/projekty/rd-karovsko/rd_karovsko_02.webp') }}" loading="lazy" alt="">
-			</figure>
-			<figure>
-				<img src="{{ asset('imgs/projekty/rd-karovsko/rd_karovsko_05.webp') }}" loading="lazy" alt="">
-			</figure>
-			<figure>
-				<img src="{{ asset('imgs/projekty/rd-karovsko/rd_karovsko_03.webp') }}" loading="lazy" alt="">
-			</figure>
-		</div>
-	</div>
-</section>
+            <div class="project-photos">
+                <figure>
+                    <img src="{{
+                        asset(
+                            'imgs/projekty/rd-karovsko/rd_karovsko_uvodni.webp'
+                        )
+                        }}"
+                        alt="" />
+                </figure>
+                <figure>
+                    <img src="{{
+                        asset(
+                            'imgs/projekty/rd-karovsko/rd_karovsko_02.webp'
+                        )
+                        }}"
+                        alt="" />
+                </figure>
+                <figure>
+                    <img src="{{
+                        asset(
+                            'imgs/projekty/rd-karovsko/rd_karovsko_05.webp'
+                        )
+                        }}"
+                        alt="" />
+                </figure>
+                <figure>
+                    <img src="{{
+                        asset(
+                            'imgs/projekty/rd-karovsko/rd_karovsko_03.webp'
+                        )
+                        }}"
+                        loading="lazy"
+                        alt="" />
+                </figure>
+            </div>
+        </div>
+    </section>
 {% endblock %}

@@ -1,30 +1,56 @@
-{% extends "index.twig" %}
-{% block head %}{% endblock %}
+{% extends 'index.twig' %}
+{% block head %}
+
+{% endblock %}
 
 {% block content %}
-<section class="project-detail">
-	<div class="container">
-		<h2>RD Sedmihorky</h2>
-		<span class="span__caption">/&nbsp;ARCHITEKTONICKÁ STUDIE /&nbsp;NOVOSTAVBA /&nbsp;2019&nbsp;/</span>
+    <section class="project-detail">
+        <div class="container">
+            <h2>
+                RD Sedmihorky
+            </h2>
+            <span class="span__caption">
+                /&nbsp;ARCHITEKTONICKÁ STUDIE /&nbsp;NOVOSTAVBA
+                /&nbsp;2019&nbsp;/
+            </span>
 
-		<article>
-			Minimalistický rodinný dům se sedlovou střechou a dřevěnou fasádou přirozeně zapadá do krajiny Českého ráje. 
-			Dům na pozemku 10 arů vytváří zázemí pro čtyřčlennou rodinu a dvě osobní auta krytá přístřeškem. 
-			Zóny jsou typicky rozdělené na noční ve druhém nadzemním podlaží a denní v prvním podlaží. 
-			Dům je obléhán z jižní a východní strany komunikací a tak hlavní obytná místnost s terasou jsou orientovány na západ pro dostatek soukromí rodiny.
-		</article>
+            <article>
+                Minimalistický rodinný dům se sedlovou střechou a dřevěnou
+                fasádou přirozeně zapadá do krajiny Českého ráje. Dům na pozemku
+                10 arů vytváří zázemí pro čtyřčlennou rodinu a dvě osobní auta
+                krytá přístřeškem. Zóny jsou typicky rozdělené na noční ve
+                druhém nadzemním podlaží a denní v prvním podlaží. Dům je
+                obléhán z jižní a východní strany komunikací a tak hlavní obytná
+                místnost s terasou jsou orientovány na západ pro dostatek
+                soukromí rodiny.
+            </article>
 
-		<div class="project-photos">
-			<figure>
-				<img src="{{ asset('imgs/projekty/zelena-cesta/zelena_cesta_uvodni.webp') }}" loading="lazy" alt="">
-			</figure>
-			<figure>
-				<img src="{{ asset('imgs/projekty/zelena-cesta/zelena_cesta_03.webp') }}" loading="lazy" alt="">
-			</figure>
-			<figure>
-				<img src="{{ asset('imgs/projekty/zelena-cesta/zelena_cesta_04.webp') }}" loading="lazy" alt="">
-			</figure>
-		</div>
-	</div>
-</section>
+            <div class="project-photos">
+                <figure>
+                    <img src="{{
+                        asset(
+                            'imgs/projekty/rd-sedmihorky/rd_sedmihorky_uvodni.webp'
+                        )
+                        }}"
+                        alt="" />
+                </figure>
+                <figure>
+                    <img src="{{
+                        asset(
+                            'imgs/projekty/rd-sedmihorky/rd_sedmihorky_03.webp'
+                        )
+                        }}"
+                        alt="" />
+                </figure>
+                <figure>
+                    <img src="{{
+                        asset(
+                            'imgs/projekty/rd-sedmihorky/rd_sedmihorky_04.webp'
+                        )
+                        }}"
+                        alt="" />
+                </figure>
+            </div>
+        </div>
+    </section>
 {% endblock %}

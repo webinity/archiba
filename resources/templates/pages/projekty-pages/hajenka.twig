@@ -1,58 +1,140 @@
-{% extends "index.twig" %}
-{% block head %}{% endblock %}
+{% extends 'index.twig' %}
+{% block head %}
+
+{% endblock %}
 
 {% block content %}
-<section class="project-detail">
-	<div class="container">
-		<h2>Hájenka</h2>
-		<span class="span__caption">/&nbsp;ARCHITEKTONICKÁ STUDIE /&nbsp;STUDIE INTERIÉRU /&nbsp;REKONSTRUKCE /&nbsp;2023&nbsp;/</span>
+    <section class="project-detail">
+        <div class="container">
+            <h2>
+                Hájenka
+            </h2>
+            <span class="span__caption">
+                /&nbsp;ARCHITEKTONICKÁ STUDIE /&nbsp;STUDIE INTERIÉRU
+                /&nbsp;REKONSTRUKCE /&nbsp;2023&nbsp;/
+            </span>
 
-		<article>
-			Stávající objekt Hájenky leží uprostřed lesa v Jizerských horách. Objekt bude sloužit k rekreačním účelům a pojme až tři rodiny. 
-			Fasáda objektu byla odlehčena od okenic, od dřevěného opláštění, které obalovalo celé zápraží a soklu byla navrácena původní kamenná podoba. 
-			Požadavkem investora byla větší míra provázání s přírodou, které  jsme dosáhli zpřístupněním zadního dvorku přímo ze světnice, prosvětlením krovu střešními okny a obnažením zápraží vzniklo kryté sezení s výhledem do přilehlého lesa. 
-			Interiér je navržený s ohledem na charakter stavby. Světlé tóny zelené jsou zkombinované s pomněnkovou modrou. 
-			V interiéru se počítá s repasovaným původním nábytkem.
-		</article>
+            <article>
+                Stávající objekt Hájenky leží uprostřed lesa v Jizerských
+                horách. Objekt bude sloužit k rekreačním účelům a pojme až tři
+                rodiny. Fasáda objektu byla odlehčena od okenic, od dřevěného
+                opláštění, které obalovalo celé zápraží a soklu byla navrácena
+                původní kamenná podoba. Požadavkem investora byla větší míra
+                provázání s přírodou, které jsme dosáhli zpřístupněním zadního
+                dvorku přímo ze světnice, prosvětlením krovu střešními okny a
+                obnažením zápraží vzniklo kryté sezení s výhledem do přilehlého
+                lesa. Interiér je navržený s ohledem na charakter stavby. Světlé
+                tóny zelené jsou zkombinované s pomněnkovou modrou. V interiéru
+                se počítá s repasovaným původním nábytkem.
+            </article>
 
-		<div class="project-photos">
-			<figure>
-				<img src="{{ asset('imgs/projekty/hajenka/hajenka_uvodni.webp') }}" loading="lazy" alt="">
-			</figure>
-			<figure>
-				<img src="{{ asset('imgs/projekty/hajenka/hajenka_02.webp') }}" loading="lazy" alt="">
-			</figure>
-			<figure>
-				<img src="{{ asset('imgs/projekty/hajenka/hajenka_04.webp') }}" loading="lazy" alt="">
-			</figure>
-			<figure>
-				<img src="{{ asset('imgs/projekty/hajenka/hajenka_06.webp') }}" loading="lazy" alt="">
-			</figure>
-			<figure>
-				<img src="{{ asset('imgs/projekty/hajenka/hajenka_05.webp') }}" loading="lazy" alt="">
-			</figure>
-			<figure>
-				<img src="{{ asset('imgs/projekty/hajenka/hajenka_09.webp') }}" loading="lazy" alt="">
-			</figure>
-			<figure>
-				<img src="{{ asset('imgs/projekty/hajenka/hajenka_10.webp') }}" loading="lazy" alt="">
-			</figure>
-			<figure>
-				<img src="{{ asset('imgs/projekty/hajenka/hajenka_11.webp') }}" loading="lazy" alt="">
-			</figure>
-			<figure>
-				<img src="{{ asset('imgs/projekty/hajenka/hajenka_12.webp') }}" loading="lazy" alt="">
-			</figure>
-			<figure>
-				<img src="{{ asset('imgs/projekty/hajenka/hajenka_13.webp') }}" loading="lazy" alt="">
-			</figure>
-			<figure>
-				<img src="{{ asset('imgs/projekty/hajenka/hajenka_14.webp') }}" loading="lazy" alt="">
-			</figure>
-			<figure>
-				<img src="{{ asset('imgs/projekty/hajenka/hajenka_15.webp') }}" loading="lazy" alt="">
-			</figure>
-		</div>
-	</div>
-</section>
+            <div class="project-photos">
+                <figure>
+                    <img src="{{
+                        asset(
+                            'imgs/projekty/hajenka/hajenka_uvodni.webp'
+                        )
+                        }}"
+                        alt="" />
+                </figure>
+                <figure>
+                    <img src="{{
+                        asset(
+                            'imgs/projekty/hajenka/hajenka_02.webp'
+                        )
+                        }}"
+                        alt="" />
+                </figure>
+                <figure>
+                    <img src="{{
+                        asset(
+                            'imgs/projekty/hajenka/hajenka_04.webp'
+                        )
+                        }}"
+                        alt="" />
+                </figure>
+                <figure>
+                    <img src="{{
+                        asset(
+                            'imgs/projekty/hajenka/hajenka_06.webp'
+                        )
+                        }}"
+                        loading="lazy"
+                        alt="" />
+                </figure>
+                <figure>
+                    <img src="{{
+                        asset(
+                            'imgs/projekty/hajenka/hajenka_05.webp'
+                        )
+                        }}"
+                        loading="lazy"
+                        alt="" />
+                </figure>
+                <figure>
+                    <img src="{{
+                        asset(
+                            'imgs/projekty/hajenka/hajenka_09.webp'
+                        )
+                        }}"
+                        loading="lazy"
+                        alt="" />
+                </figure>
+                <figure>
+                    <img src="{{
+                        asset(
+                            'imgs/projekty/hajenka/hajenka_10.webp'
+                        )
+                        }}"
+                        loading="lazy"
+                        alt="" />
+                </figure>
+                <figure>
+                    <img src="{{
+                        asset(
+                            'imgs/projekty/hajenka/hajenka_11.webp'
+                        )
+                        }}"
+                        loading="lazy"
+                        alt="" />
+                </figure>
+                <figure>
+                    <img src="{{
+                        asset(
+                            'imgs/projekty/hajenka/hajenka_12.webp'
+                        )
+                        }}"
+                        loading="lazy"
+                        alt="" />
+                </figure>
+                <figure>
+                    <img src="{{
+                        asset(
+                            'imgs/projekty/hajenka/hajenka_13.webp'
+                        )
+                        }}"
+                        loading="lazy"
+                        alt="" />
+                </figure>
+                <figure>
+                    <img src="{{
+                        asset(
+                            'imgs/projekty/hajenka/hajenka_14.webp'
+                        )
+                        }}"
+                        loading="lazy"
+                        alt="" />
+                </figure>
+                <figure>
+                    <img src="{{
+                        asset(
+                            'imgs/projekty/hajenka/hajenka_15.webp'
+                        )
+                        }}"
+                        loading="lazy"
+                        alt="" />
+                </figure>
+            </div>
+        </div>
+    </section>
 {% endblock %}

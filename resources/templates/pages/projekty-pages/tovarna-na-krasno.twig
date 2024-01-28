@@ -1,49 +1,96 @@
-{% extends "index.twig" %}
-{% block head %}{% endblock %}
+{% extends 'index.twig' %}
+{% block head %}
+
+{% endblock %}
 
 {% block content %}
-<section class="project-detail">
-	<div class="container">
-		<h2>Továrna na krásno</h2>
-		<span class="span__caption">/&nbsp;STUDIE INTERIÉRU / 2021 /&nbsp;PROBÍHAJÍCÍ REALIZACE&nbsp;/</span>
+    <section class="project-detail">
+        <div class="container">
+            <h2>
+                Továrna na krásno
+            </h2>
+            <span class="span__caption">
+                /&nbsp;STUDIE INTERIÉRU / 2021 /&nbsp;PROBÍHAJÍCÍ
+                REALIZACE&nbsp;/
+            </span>
 
-		<article>
-			Kosmetický salon pro Továrnu na krásno vznikl v části původního průmyslového objektu v Turnově. 
-			Rekonstruovaný prostor určený pro kosmetiku, manikúru, pedikúru, vizáž a příležitostné workshopy vznikl ve dvou podlažích o celkové ploše 80 m&sup2. 
-			Interiér se odráží od světa vizážistiky, kde oba směry pracují s vrstvením - od původního přiznaného zdiva, přes základní bílé barvy obkladů, dlažeb a nábytku, po nové výrazné vrstvy lesklé mědi a světelného neonu. 
-			V návrhu je zohledněno přání investora, který kladl důraz na vytvoření industriálního prostředí působící teplým domácím dojmem se světlými barvami, měděnými prvky, bez použití betonových materiálů a tmavých ploch.  
-		</article>
+            <article>
+                Kosmetický salon pro Továrnu na krásno vznikl v části původního
+                průmyslového objektu v Turnově. Rekonstruovaný prostor určený
+                pro kosmetiku, manikúru, pedikúru, vizáž a příležitostné
+                workshopy vznikl ve dvou podlažích o celkové ploše 80 m&sup2.
+                Interiér se odráží od světa vizážistiky, kde oba směry pracují s
+                vrstvením - od původního přiznaného zdiva, přes základní bílé
+                barvy obkladů, dlažeb a nábytku, po nové výrazné vrstvy lesklé
+                mědi a světelného neonu. V návrhu je zohledněno přání investora,
+                který kladl důraz na vytvoření industriálního prostředí působící
+                teplým domácím dojmem se světlými barvami, měděnými prvky, bez
+                použití betonových materiálů a tmavých ploch.
+            </article>
 
-		<div class="project-photos">
-			<figure>
-				<img src="{{ asset('imgs/projekty/tovarna-na-krasno/tovarna_na_krasno_uvodni.webp') }}" loading="lazy"
-					alt="">
-			</figure>
-			<figure>
-				<img src="{{ asset('imgs/projekty/tovarna-na-krasno/tovarna_na_krasno_02.webp') }}" loading="lazy"
-					alt="">
-			</figure>
-			<figure>
-				<img src="{{ asset('imgs/projekty/tovarna-na-krasno/tovarna_na_krasno_04.webp') }}" loading="lazy"
-					alt="">
-			</figure>
-			<figure>
-				<img src="{{ asset('imgs/projekty/tovarna-na-krasno/tovarna_na_krasno_05.webp') }}" loading="lazy"
-					alt="">
-			</figure>
-			<figure>
-				<img src="{{ asset('imgs/projekty/tovarna-na-krasno/tovarna_na_krasno_06.webp') }}" loading="lazy"
-					alt="">
-			</figure>
-			<figure>
-				<img src="{{ asset('imgs/projekty/tovarna-na-krasno/tovarna_na_krasno_07.webp') }}" loading="lazy"
-					alt="">
-			</figure>
-			<figure>
-				<img src="{{ asset('imgs/projekty/tovarna-na-krasno/tovarna_na_krasno_08.webp') }}" loading="lazy"
-					alt="">
-			</figure>
-		</div>
-	</div>
-</section>
+            <div class="project-photos">
+                <figure>
+                    <img src="{{
+                        asset(
+                            'imgs/projekty/tovarna-na-krasno/tovarna_na_krasno_uvodni.webp'
+                        )
+                        }}"
+                        alt="" />
+                </figure>
+                <figure>
+                    <img src="{{
+                        asset(
+                            'imgs/projekty/tovarna-na-krasno/tovarna_na_krasno_02.webp'
+                        )
+                        }}"
+                        alt="" />
+                </figure>
+                <figure>
+                    <img src="{{
+                        asset(
+                            'imgs/projekty/tovarna-na-krasno/tovarna_na_krasno_04.webp'
+                        )
+                        }}"
+                        alt="" />
+                </figure>
+                <figure>
+                    <img src="{{
+                        asset(
+                            'imgs/projekty/tovarna-na-krasno/tovarna_na_krasno_05.webp'
+                        )
+                        }}"
+                        loading="lazy"
+                        alt="" />
+                </figure>
+                <figure>
+                    <img src="{{
+                        asset(
+                            'imgs/projekty/tovarna-na-krasno/tovarna_na_krasno_06.webp'
+                        )
+                        }}"
+                        loading="lazy"
+                        alt="" />
+                </figure>
+                <figure class="short">
+                    <img src="{{
+                        asset(
+                            'imgs/projekty/tovarna-na-krasno/tovarna_na_krasno_07.webp'
+                        )
+                        }}"
+                        loading="lazy"
+                        alt="" />
+                </figure>
+                <figure class="short">
+                    <img class="contain"
+                        src="{{
+                        asset(
+                            'imgs/projekty/tovarna-na-krasno/tovarna_na_krasno_08.webp'
+                        )
+                        }}"
+                        loading="lazy"
+                        alt="" />
+                </figure>
+            </div>
+        </div>
+    </section>
 {% endblock %}

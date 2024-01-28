@@ -28,6 +28,26 @@ return function (App $app, Twig $view){
         return $view->render($response, 'pages/projekty.twig');
     });
 
+    $app->get('/projekty/byt-veleslavin', function (Request $request, Response $response) use ($view) {
+        return $view->render($response, 'pages/projekty-pages/byt-veleslavin.twig');
+    });
+
+    $app->get('/projekty/hilmarovo-namesti', function (Request $request, Response $response) use ($view) {
+        return $view->render($response, 'pages/projekty-pages/hilmarovo-namesti.twig');
+    });
+
+    $app->get('/projekty/revitalizace-sidliste-v-kopidlne', function (Request $request, Response $response) use ($view) {
+        return $view->render($response, 'pages/projekty-pages/revitalizace-sidliste-v-kopidlne.twig');
+    });
+
+    $app->get('/projekty/rd-zelena-cesta', function (Request $request, Response $response) use ($view) {
+        return $view->render($response, 'pages/projekty-pages/rd-zelena-cesta.twig');
+    });
+
+    $app->get('/projekty/budova-byvaleho-forda', function (Request $request, Response $response) use ($view) {
+        return $view->render($response, 'pages/projekty-pages/budova-byvaleho-forda.twig');
+    });
+
     $app->get('/projekty/tovarna-na-krasno', function (Request $request, Response $response) use ($view) {
         return $view->render($response, 'pages/projekty-pages/tovarna-na-krasno.twig');
     });

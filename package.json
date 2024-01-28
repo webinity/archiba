@@ -5,7 +5,7 @@
     "main": "index.js",
     "scripts": {
         "dev": "npx mix",
-        "prettier": "npx prettier --write './resources/templates/*.twig'",
+        "prettier": "npx prettier --write './resources/templates/pages/projekty-pages/*.twig'",
         "server": "php -S localhost:8081 -t public/"
     },
     "repository": {

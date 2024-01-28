@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="cs">
     <head>
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-JESWZ2CWW1"></script>
+        <script async
+            src="https://www.googletagmanager.com/gtag/js?id=G-JESWZ2CWW1"></script>
         <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+            window.dataLayer = window.dataLayer || []; function
+            gtag(){dataLayer.push(arguments);} gtag('js', new Date());
 
-        gtag('config', 'G-JESWZ2CWW1');
+            gtag('config', 'G-JESWZ2CWW1');
         </script>
-        <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+        <meta http-equiv="Content-Security-Policy"
+            content="upgrade-insecure-requests" />
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -58,13 +59,14 @@
 
             <main>
                 {% block content %}
+
                 {% endblock %}
             </main>
 
             <footer id="kontakt">
                 <div class="container">
                     <ul class="name">
-                        <li>Ing. arch. Barbora Kabeláčová</li>
+                        <li>Ing. arch. Barbora Bursová</li>
                         <li>
                             <a href="tel:+420777777523">+ 420 777 777 523</a>
                         </li>
@@ -106,6 +108,7 @@
         </div>
         <script type="text/javascript" src="{{ asset('js/app.js') }}"></script>
         {% block script %}
+
         {% endblock %}
     </body>
 </html>

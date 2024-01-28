@@ -30,6 +30,22 @@
             img {
                 height: 100%;
                 width: 100%;
+
+                &.contain {
+                    object-fit: cover;
+                }
+            }
+        }
+
+        @media screen and (min-width: $pc) {
+            &.desktop-row {
+                figure {
+                    flex: 1 0 calc(33.3333% - 10px);
+
+                    &.w-100 {
+                        flex-basis: 100%;
+                    }
+                }
             }
         }
     }

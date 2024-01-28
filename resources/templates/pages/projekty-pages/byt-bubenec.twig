@@ -1,48 +1,109 @@
-{% extends "index.twig" %}
-{% block head %}{% endblock %}
+{% extends 'index.twig' %}
+{% block head %}
+
+{% endblock %}
 
 {% block content %}
-<section class="project-detail">
-	<div class="container">
-		<h2>Byt v Bubenči</h2>
-		<span class="span__caption">/&nbsp;NÁVRH INTERIÉRU / 2022 /&nbsp;PROBÍHAJÍCÍ REALIZACE&nbsp;/</span>
+    <section class="project-detail">
+        <div class="container">
+            <h2>
+                Byt v Bubenči
+            </h2>
+            <span class="span__caption">
+                /&nbsp;NÁVRH INTERIÉRU / 2022 /&nbsp;PROBÍHAJÍCÍ
+                REALIZACE&nbsp;/
+            </span>
 
-		<article>
-			Bubenečský byt se nachází v bytovém domě, který je součástí urbanistické koncepce Vítězného náměstí od Antonína Engela z roku 1925. 
-			Interiér je navržen v duchu třicátých let a jeho barevná paleta se odráží od zemitých tónů jeho kamenné podlahy. 
-			Původní jsou zachované repasované dvoukřídlé dveře a parkety. Oblé tvary, zelená barva, dubová dýha a chrom jsou hlavními prvky celého interiéru. 
-		</article>
+            <article>
+                Bubenečský byt se nachází v bytovém domě, který je součástí
+                urbanistické koncepce Vítězného náměstí od Antonína Engela z
+                roku 1925. Interiér je navržen v duchu třicátých let a jeho
+                barevná paleta se odráží od zemitých tónů jeho kamenné podlahy.
+                Původní jsou zachované repasované dvoukřídlé dveře a parkety.
+                Oblé tvary, zelená barva, dubová dýha a chrom jsou hlavními
+                prvky celého interiéru.
+            </article>
 
-		<div class="project-photos">
-			<figure>
-				<img src="{{ asset('imgs/projekty/byt-bubenec/byt_bubenec_uvodni.webp') }}" loading="lazy" alt="">
-			</figure>
-			<figure>
-				<img src="{{ asset('imgs/projekty/byt-bubenec/byt_bubenec_5.webp') }}" loading="lazy" alt="">
-			</figure>
-			<figure>
-				<img src="{{ asset('imgs/projekty/byt-bubenec/byt_bubenec_7.webp') }}" loading="lazy" alt="">
-			</figure>
-			<figure>
-				<img src="{{ asset('imgs/projekty/byt-bubenec/byt_bubenec_4.webp') }}" loading="lazy" alt="">
-			</figure>
-			<figure>
-				<img src="{{ asset('imgs/projekty/byt-bubenec/byt_bubenec_6.webp') }}" loading="lazy" alt="">
-			</figure>
-			<figure>
-				<img src="{{ asset('imgs/projekty/byt-bubenec/byt_bubenec_8.webp') }}" loading="lazy" alt="">
-			</figure>
-			<figure class="short">
-				<img src="{{ asset('imgs/projekty/byt-bubenec/byt_bubenec_1.webp') }}" loading="lazy" alt="">
-			</figure>
-			<figure class="short">
-				<img src="{{ asset('imgs/projekty/byt-bubenec/byt_bubenec_3.webp') }}" loading="lazy" alt="">
-			</figure>
-			<figure>
-				<img src="{{ asset('imgs/projekty/byt-bubenec/byt_bubenec_2.webp') }}" loading="lazy" alt="">
-			</figure>
-		</div>
-
-	</div>
-</section>
+            <div class="project-photos">
+                <figure>
+                    <img src="{{
+                        asset(
+                            'imgs/projekty/byt-bubenec/byt_bubenec_uvodni.webp'
+                        )
+                        }}"
+                        alt="" />
+                </figure>
+                <figure>
+                    <img src="{{
+                        asset(
+                            'imgs/projekty/byt-bubenec/byt_bubenec_5.webp'
+                        )
+                        }}"
+                        alt="" />
+                </figure>
+                <figure>
+                    <img src="{{
+                        asset(
+                            'imgs/projekty/byt-bubenec/byt_bubenec_7.webp'
+                        )
+                        }}"
+                        alt="" />
+                </figure>
+                <figure>
+                    <img src="{{
+                        asset(
+                            'imgs/projekty/byt-bubenec/byt_bubenec_4.webp'
+                        )
+                        }}"
+                        loading="lazy"
+                        alt="" />
+                </figure>
+                <figure>
+                    <img src="{{
+                        asset(
+                            'imgs/projekty/byt-bubenec/byt_bubenec_6.webp'
+                        )
+                        }}"
+                        loading="lazy"
+                        alt="" />
+                </figure>
+                <figure>
+                    <img src="{{
+                        asset(
+                            'imgs/projekty/byt-bubenec/byt_bubenec_8.webp'
+                        )
+                        }}"
+                        loading="lazy"
+                        alt="" />
+                </figure>
+                <figure class="short">
+                    <img src="{{
+                        asset(
+                            'imgs/projekty/byt-bubenec/byt_bubenec_1.webp'
+                        )
+                        }}"
+                        loading="lazy"
+                        alt="" />
+                </figure>
+                <figure class="short">
+                    <img src="{{
+                        asset(
+                            'imgs/projekty/byt-bubenec/byt_bubenec_3.webp'
+                        )
+                        }}"
+                        loading="lazy"
+                        alt="" />
+                </figure>
+                <figure>
+                    <img src="{{
+                        asset(
+                            'imgs/projekty/byt-bubenec/byt_bubenec_2.webp'
+                        )
+                        }}"
+                        loading="lazy"
+                        alt="" />
+                </figure>
+            </div>
+        </div>
+    </section>
 {% endblock %}

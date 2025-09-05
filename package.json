@@ -4,7 +4,9 @@
     "description": "Skeleton for making websites and basic web apps",
     "main": "index.js",
     "scripts": {
-        "dev": "npx mix",
+        "dev": "vite",
+        "build": "vite build",
+        "preview": "vite preview",
         "prettier": "npx prettier --write './resources/templates/pages/projekty-pages/*.twig'",
         "server": "php -S localhost:8081 -t public/"
     },
@@ -27,17 +29,12 @@
     },
     "homepage": "https://github.com/webinity/webinity-skeleton#readme",
     "devDependencies": {
-        "laravel-mix": "^6.0.41",
         "prettier": "2.7.0",
-        "resolve-url-loader": "^5.0.0",
         "sass": "^1.49.0",
-        "sass-loader": "^12.4.0",
-        "vue-loader": "^15.9.8",
-        "vue-template-compiler": "^2.6.14"
+        "vite": "^7.1.4"
     },
     "dependencies": {
-        "axios": "^0.27.2",
-        "prettier-plugin-twig-melody": "^0.4.6",
+        "axios": "^1.11.0",
         "swiper": "^8.4.4"
     }
 }

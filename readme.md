@@ -1,3 +1,9 @@
+HOW TO RUN
+npm run server v rootu projektu
+
+PRIDAM VITE MISTO LARAVEL MIX
+npm run dev pro kompilaci
+
 # webinity-skeleton
 
 Webinity-skeleton is fantastic starting point for quick websites or prototypes.

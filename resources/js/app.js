@@ -1,3 +1,6 @@
+import '../scss/styles.scss'
+console.log('hot reload funguje')
+
 const hamburgerNav = document.querySelector('.hamburger');
 hamburgerNav.addEventListener('click', () => {
 	document.querySelector('#nav-open').classList.add('open');

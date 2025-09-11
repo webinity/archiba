@@ -23,10 +23,12 @@
             rel="stylesheet" />
         <link href="http://fonts.cdnfonts.com/css/bahnschrift"
             rel="stylesheet" />
+        {% if ENVIRONMENT != 'DEV' %}
         <link rel="stylesheet" href="{{ asset('css/styles.css') }}" />
+        {% endif %}
 
         <title>
-            Barbora Kabeláčová | architektura a design
+            Barbora Bursová | architektura a design
         </title>
     </head>
 
@@ -105,8 +107,14 @@
                     </address>
                 </div>
             </footer>
+            <p>ENVIRONMENT: {{ ENVIRONMENT }}</p>
         </div>
-        <script type="text/javascript" src="{{ asset('js/app.js') }}"></script>
+        {% if ENVIRONMENT == 'DEV' %}
+        <!-- Vite dev server -->
+        <script type="module" src="http://localhost:5174/js/app.js"></script>
+            {% else %}
+            <script type="text/javascript" src="{{ asset('js/app.js') }}"></script>
+        {% endif %}
         {% block script %}
 
         {% endblock %}

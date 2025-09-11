@@ -38,6 +38,16 @@ h5 {
 	font-family: 'Bahnschrift', sans-serif;
 }
 
+a {
+	text-decoration: none;
+	color: inherit;
+
+	&:visited {
+		text-decoration: none;
+		color: inherit;
+	}
+}
+
 h1 {
 	font-size: 3rem;
 	line-height: 1;

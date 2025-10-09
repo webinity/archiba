@@ -19,6 +19,6 @@
         }
     ],
     "require": {
-        "webinity/framework": "1.0.*"
+        "webinity/framework": "^1.0.3"
     }
 }

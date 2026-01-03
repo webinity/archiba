@@ -78,15 +78,7 @@
                             </a>
                         </li>
                         <li>Kancelář:</li>
-                        <li>Voctářova 2497/18, Praha 8-Libeň</li>
-                        <li>
-                            budova
-                            <a href="https://goo.gl/maps/3ZmJCn1d8S6cqeM66"
-                                target="_blank"
-                                rel="noopener noreferrer">
-                                myhive Palmovka
-                            </a>
-                        </li>
+                        <li>Ohrazenice 168, Turnov 511 01</li>
                     </ul>
 
                     <div class="insta">
@@ -107,13 +99,12 @@
                     </address>
                 </div>
             </footer>
-            <p>ENVIRONMENT: {{ ENVIRONMENT }}</p>
         </div>
         {% if ENVIRONMENT == 'DEV' %}
         <!-- Vite dev server -->
-        <script type="module" src="http://localhost:5174/js/app.js"></script>
-            {% else %}
-            <script type="text/javascript" src="{{ asset('js/app.js') }}"></script>
+        <script type="module" src="http://localhost:5175/js/app.js"></script>
+        {% else %}
+        <script type="text/javascript" src="{{ asset('js/app.js') }}"></script>
         {% endif %}
         {% block script %}
 

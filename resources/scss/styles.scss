@@ -1,13 +1,13 @@
-@import './variables';
-@import './mixins';
-@import './layout';
-@import './general-classes';
-@import './kontakt-page';
-@import './sluzby-page';
-@import './projekty';
-@import './main-page';
-@import './projekty-pages';
+// @use './variables';
+// @use './mixins';
+// @use './layout';
+// @use './general-classes';
+@use './kontakt-page';
+@use './sluzby-page';
+@use './projekty';
+@use './main-page';
+@use './projekty-pages';
 //swiper styles
-@import 'swiper/css';
-@import 'swiper/scss/effect-fade';
-@import 'swiper/scss/navigation';
+@use 'swiper/css';
+@use 'swiper/scss/effect-fade';
+@use 'swiper/scss/navigation';

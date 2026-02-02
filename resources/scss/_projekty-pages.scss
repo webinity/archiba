@@ -15,40 +15,26 @@
     }
 
     .project-photos {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: 1fr;
         gap: 10px;
 
         figure {
-            height: 100%;
             width: 100%;
 
-            &.short {
-                width: calc(50% - 5px);
-                height: auto;
-            }
-
             img {
-                height: 100%;
                 width: 100%;
-
-                &.contain {
-                    object-fit: cover;
-                }
+                height: 100%;
+                object-fit: cover;
             }
         }
 
         @media screen and (min-width: $pc) {
-            &.desktop-row {
-                figure {
-                    flex: 1 0 calc(33.3333% - 10px);
+            grid-template-columns: repeat(3, 1fr);
+        }
 
-                    &.w-100 {
-                        flex-basis: 100%;
-                    }
-                }
-            }
+        &.single-col {
+            grid-template-columns: 1fr;
         }
     }
 }

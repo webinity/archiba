@@ -32,6 +32,22 @@ return function (App $app, Twig $view){
         return $view->render($response, 'pages/projekty-pages/byt-veleslavin.twig');
     });
 
+    $app->get('/projekty/najemni-bydleni-prosek', function (Request $request, Response $response) use ($view) {
+        return $view->render($response, 'pages/projekty-pages/najemni-bydleni-prosek.twig');
+    });
+
+    $app->get('/projekty/bytovy-dum-5-kvetna', function (Request $request, Response $response) use ($view) {
+        return $view->render($response, 'pages/projekty-pages/bytovy-dum-5-kvetna.twig');
+    });
+
+    $app->get('/projekty/rd-kosatky', function (Request $request, Response $response) use ($view) {
+        return $view->render($response, 'pages/projekty-pages/rd-kosatky.twig');
+    });
+
+    $app->get('/projekty/garsonka-zacler', function (Request $request, Response $response) use ($view) {
+        return $view->render($response, 'pages/projekty-pages/garsonka-zacler.twig');
+    });
+    
     $app->get('/projekty/hilmarovo-namesti', function (Request $request, Response $response) use ($view) {
         return $view->render($response, 'pages/projekty-pages/hilmarovo-namesti.twig');
     });

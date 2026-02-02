@@ -9,8 +9,10 @@
 
             gtag('config', 'G-JESWZ2CWW1');
         </script>
+        {% if ENVIRONMENT != 'DEV' %}
         <meta http-equiv="Content-Security-Policy"
             content="upgrade-insecure-requests" />
+        {% endif %}
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -78,7 +80,8 @@
                             </a>
                         </li>
                         <li>Kancelář:</li>
-                        <li>Ohrazenice 168, Turnov 511 01</li>
+                        <li>Ohrazenice 168</li>
+                        <li>Turnov 511 01</li>
                     </ul>
 
                     <div class="insta">
@@ -102,7 +105,8 @@
         </div>
         {% if ENVIRONMENT == 'DEV' %}
         <!-- Vite dev server -->
-        <script type="module" src="http://localhost:5175/js/app.js"></script>
+        <script type="module" src="http://localhost:5174/@vite/client"></script>
+        <script type="module" src="http://localhost:5174/js/app.js"></script>
         {% else %}
         <script type="text/javascript" src="{{ asset('js/app.js') }}"></script>
         {% endif %}

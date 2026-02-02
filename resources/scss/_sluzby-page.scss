@@ -23,7 +23,7 @@ main {
                 }
 
                 h2 {
-                    margin-bottom: 40px
+                    margin-bottom: 20px
                 }
 
                 span {
@@ -58,6 +58,18 @@ main {
 
             @media screen and (min-width: $pc) {
                 max-width: 450px;
+            }
+        }
+
+        &__step {
+            margin-bottom: 20px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            h3 {
+                margin-bottom: 10px;
             }
         }
     }

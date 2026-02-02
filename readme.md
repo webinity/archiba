@@ -1,7 +1,8 @@
 HOW TO RUN
+npm install
+composer install
 npm run server v rootu projektu
 
-PRIDAM VITE MISTO LARAVEL MIX
 npm run dev pro kompilaci
 
 # webinity-skeleton

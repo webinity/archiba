@@ -1,7 +1,7 @@
-// @use './variables';
-// @use './mixins';
-// @use './layout';
-// @use './general-classes';
+@use './variables';
+@use './mixins';
+@use './layout';
+@use './general-classes';
 @use './kontakt-page';
 @use './sluzby-page';
 @use './projekty';
@@ -9,5 +9,5 @@
 @use './projekty-pages';
 //swiper styles
 @use 'swiper/css';
-@use 'swiper/scss/effect-fade';
-@use 'swiper/scss/navigation';
+@use 'swiper/css/effect-fade';
+@use 'swiper/css/navigation';

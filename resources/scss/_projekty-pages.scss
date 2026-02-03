@@ -27,6 +27,10 @@
                 height: 100%;
                 object-fit: cover;
             }
+
+            &.full-width {
+                grid-column: 1 / -1;
+            }
         }
 
         @media screen and (min-width: $pc) {

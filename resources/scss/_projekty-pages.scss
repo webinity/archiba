@@ -31,10 +31,20 @@
             &.full-width {
                 grid-column: 1 / -1;
             }
+
+            &.partial-width {
+                @media screen and (min-width: $pc) {
+                    grid-column: span 3; // 50% - 2 per row
+                }
+            }
         }
 
         @media screen and (min-width: $pc) {
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(6, 1fr);
+
+            figure {
+                grid-column: span 2; // 33% - 3 per row
+            }
         }
 
         &.single-col {

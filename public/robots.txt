@@ -1,0 +1,9 @@
+# robots.txt for archiba.cz
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://archiba.cz/sitemap.xml
+
+# Disallow admin/private areas if any
+Disallow: /assets/

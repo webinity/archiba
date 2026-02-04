@@ -16,6 +16,54 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <meta name="description" content="{% block meta_description %}Ing. arch. Barbora Bursová - architektonický ateliér v Turnově. Návrhy interiérů, rodinných domů, rekonstrukce a urbanistické studie.{% endblock %}" />
+        <meta name="author" content="Barbora Bursová" />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://archiba.cz{{ app.request.uri.path ?? '' }}" />
+
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://archiba.cz{{ app.request.uri.path ?? '' }}" />
+        <meta property="og:title" content="{% block og_title %}Ing. arch. Barbora Bursová | architektura a design{% endblock %}" />
+        <meta property="og:description" content="{% block og_description %}Architektonický ateliér v Turnově - návrhy interiérů, rodinných domů, rekonstrukce a urbanistické studie.{% endblock %}" />
+        <meta property="og:image" content="https://archiba.cz/assets/imgs/og-image.jpg" />
+        <meta property="og:locale" content="cs_CZ" />
+        <meta property="og:site_name" content="Archiba - Ing. arch. Barbora Bursová" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="{% block twitter_title %}Ing. arch. Barbora Bursová | architektura a design{% endblock %}" />
+        <meta name="twitter:description" content="{% block twitter_description %}Architektonický ateliér v Turnově - návrhy interiérů, rodinných domů a rekonstrukce.{% endblock %}" />
+        <meta name="twitter:image" content="https://archiba.cz/assets/imgs/og-image.jpg" />
+
+        {# Structured Data - LocalBusiness #}
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            "name": "Archiba - Ing. arch. Barbora Bursová",
+            "description": "Architektonický ateliér specializující se na návrhy interiérů, rodinných domů, rekonstrukce a urbanistické studie.",
+            "url": "https://archiba.cz",
+            "telephone": "+420777777523",
+            "email": "barbora@archiba.cz",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Ohrazenice 168",
+                "addressLocality": "Turnov",
+                "postalCode": "511 01",
+                "addressCountry": "CZ"
+            },
+            "founder": {
+                "@type": "Person",
+                "name": "Ing. arch. Barbora Bursová",
+                "jobTitle": "Architekt"
+            },
+            "openingHours": "Mo-Fr 09:00-17:00",
+            "sameAs": [
+                "https://www.instagram.com/_archiba/"
+            ]
+        }
+        </script>
+
         <link rel="shortcut icon"
             href="{{ asset('imgs/favicon.ico') }}"
             type="image/x-icon" />
@@ -29,9 +77,8 @@
         <link rel="stylesheet" href="{{ asset('css/styles.css') }}" />
         {% endif %}
 
-        <title>
-            Barbora Bursová | architektura a design
-        </title>
+        <title>{% block title %}Ing. arch. Barbora Bursová | architektura a design{% endblock %}</title>
+        {% block head %}{% endblock %}
     </head>
 
     <body>

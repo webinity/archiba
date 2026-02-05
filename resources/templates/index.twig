@@ -32,7 +32,7 @@
 
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="{% block twitter_title %}Ing. arch. Barbora Bursová | architektura a design{% endblock %}" />
-        <meta name="twitter:description" content="{% block twitter_description %}Architektonický ateliér v Turnově - návrhy interiérů, rodinných domů a rekonstrukce.{% endblock %}" />
+        <meta name="twitter:description" content="{% block twitter_description %}Architektura a design, návrhy staveb a interiérů.{% endblock %}" />
         <meta name="twitter:image" content="https://archiba.cz/assets/imgs/og-image.jpg" />
 
         {# Structured Data - LocalBusiness #}
@@ -41,7 +41,7 @@
             "@context": "https://schema.org",
             "@type": "LocalBusiness",
             "name": "Archiba - Ing. arch. Barbora Bursová",
-            "description": "Architektonický ateliér specializující se na návrhy interiérů, rodinných domů, rekonstrukce a urbanistické studie.",
+            "description": "Architektura a design, návrhy staveb a interiérů.",
             "url": "https://archiba.cz",
             "telephone": "+420777777523",
             "email": "barbora@archiba.cz",
@@ -57,7 +57,7 @@
                 "name": "Ing. arch. Barbora Bursová",
                 "jobTitle": "Architekt"
             },
-            "openingHours": "Mo-Fr 09:00-17:00",
+            "openingHours": "Mo-Fr 10:00-18:00",
             "sameAs": [
                 "https://www.instagram.com/_archiba/"
             ]
@@ -74,7 +74,7 @@
         <link href="http://fonts.cdnfonts.com/css/bahnschrift"
             rel="stylesheet" />
         {% if ENVIRONMENT != 'DEV' %}
-        <link rel="stylesheet" href="{{ asset('css/styles.css') }}" />
+        <link rel="stylesheet" href="{{ asset('css/app.css') }}" />
         {% endif %}
 
         <title>{% block title %}Ing. arch. Barbora Bursová | architektura a design{% endblock %}</title>
